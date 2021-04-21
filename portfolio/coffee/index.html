@@ -1,0 +1,357 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel="stylesheet" type="text/css" href="fonta/css/all.css">
+		<title>원두</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&family=Do+Hyeon&family=Black+Han+Sans&family=Pinyon+Script&family=Pattaya&display=swap" rel="stylesheet">
+
+		<style>
+		*{margin:0; padding:0;}
+		img{border:0;}
+		img, fieldset{vertical-align:top;}
+		li{list-style-type:none;}
+		address, em{font-style:normal;}
+		a{color:#fff; text-decoration:none;}
+		
+
+		
+		body{font:16px solid; background:url(images/leftBg.png) repeat-y, url(images/rightBg.png) repeat-y right top; box-sizing:border-box;}
+		
+		#wrapper{width:1200px; margin:0 auto; background:#939393; position:relative;}
+		
+		/* header */
+		.header{overflow:hidden; height:150px;}
+			.header a:hover{color:#c5ac76;}
+		header .sns{float:left; margin:50px 0 0 30px;}
+			.sns li{float:left; margin-right:30px;}
+				.sns li a{font-size:20px;}
+				.sns li i:hover{transform:scale(1.5);}
+			.right{float:right; margin:55px 30px 0 0;}
+				.right li{float: left; margin-right:30px;}	
+					.right li a{font-size:20px;}
+			.logo{position:absolute; top:0; left:500px;}
+			.gnb{clear:both; background:#b3b3b3; height:50px;}
+				.gnb li{display:inline-block; padding:12.5px 0;}
+					.gnb li:nth-of-type(1){margin-left:150px;}
+					.gnb li:nth-of-type(2){margin-left:100px;}
+					.gnb li:nth-of-type(3){margin-left:350px;}
+					.gnb li:nth-of-type(4){margin-left:60px;}
+					.gnb li:nth-of-type(5){margin-left:60px;}
+						.gnb li a{font-size:18.5px;}
+						.gnb li a:hover{color:#000;}
+						
+		/* section */
+		section{position:relative;}
+			section h1{width:1160px; height:500px; background:url(images/main.jpg) no-repeat; background-size:cover; margin:50px 0 0 40px; opacity:0.7;}
+			.left{position:absolute; top:50px; left:0; width:750px; height:400px; background:rgba(0,0,0,0.5); border-top:5px solid #c5ac76; border-bottom:5px solid #c5ac76; }
+				.left h2{font-size:15px; color:#c5ab76; font-weight:bold; margin:70px 0 0 100px;}
+				.left p{font:italic 58px serif; margin-left:150px; color:#fff;}
+				.left p:nth-of-type(2){text-align:right; margin-right:40px;}
+				.left p:nth-of-type(3){color:#fff; font:normal italic 20px serif; text-align:right; margin:40px 50px 0 0;}
+				
+				.divright{position:absolute; top:50px; right:50px; width:400px; height:400px; background:url(images/mainslide3.jpg) no-repeat; background-size:400px 400px;  opacity:1; border:5px solid #c5ac76; border-left:0;}
+				.divright2{position:absolute; top:50px; right:50px; width:400px; height:400px; background:url(images/mainslide4.jpg) no-repeat; background-size:400px 400px; z-index:1000;border:5px solid #c5ac76; border-left:0;}
+				
+			
+			div.about{margin-top:250px; margin-left:70px; height:450px; background:url(images/aboutCover.png)  no-repeat; padding:110px 0 110px 120px; box-sizing:border-box;}
+				.about p{color:#fff; }
+					.about > p{position:absolute; top:690px; left:140px; font-size:80px; font-family:'Pattaya', sans-serif;}
+					.about article p{font-size:25px; font-family: 'Gamja Flower', cursive; line-height:1.5; position:relative; z-index:9999;}			
+					.aboutimg{position:absolute; top:600px; right:0; width:700px; height:770px; background:url(images/about.png); opacity:0.5;}
+				
+			div.coffee{margin-top:250px; position:relative; overflow:hidden;}
+				.coffee > img{margin-left:50px; float:left;}
+				.coffee .roasting{color:#fff; font-size:50px; font-weight:bold;}
+				.coffee ul {float:left; text-align:center;}
+				.coffee ul li{margin-bottom:20px;}
+				.coffee .Order{margin:140px 100px 0 80px;}
+				.coffee .Roast{margin:140px 100px 0 0;}
+				.coffee .Get{margin:140px 70px 0 0;}
+					.coffee ul li a{font-size:25px;}
+				
+				.truck{position:relative; top:150px; left:220px; width:200px; height:100px; overflow:hidden;}
+				.truck:hover img{position:absolute; top:0; left:0; animation:truck 1.5s infinite;}
+				
+				
+				@keyframes truck{
+				0%{left:150px;}
+				50%{left:0;}
+				100%{left:-200px;}
+				}
+				
+			.Product{clear:both; margin-top:90px; overflow:hidden; text-align:center;}
+				.Product h3{font-size:40px; font-weight:bold; color:#fff;}
+				.Product > p{width:60px; height:15px; border-bottom:5px solid #fff; margin-left:570px; margin-bottom:50px;}
+				
+				div.cate{position:relative;}
+					.cate img{width:350px; height:400px; float:left; margin-right:35px; }
+					.cate .cate1 img{margin-left:35px;}
+					.cate p{width:350px; height:400px; background:url(images/cateFront.jpg); opacity:0.5; position:absolute; display:none;}
+						.cate1 p{left:35px;}
+						.cate2 p{left:420px;}
+						.cate3 p{left:805px;}
+					.cate span{position:absolute; top:0; left:0; color:#000; font-size:60px;  font-family: 'Pinyon Script', cursive;}
+						.cate1 .Accessory{top:100px; left:70px;}
+						.cate2 .Blending{top:100px; left:70px;}
+						.cate3 .Origins{top:100px; left:100px;}
+						
+					.cate article:hover p{display:block;}
+					
+				
+				.fill{clear:both; margin-top:100px; position:relative;}
+					.fill > p{font-size:40px; font-weight:bold; color:#c5ab76; margin-left:50px;}
+					.fill a{position:absolute; top:13px; left:430px;}
+						.fill article article{width:300px; height:400px; float:left; border:5px solid #c5ab76; text-align:center; position:relative;}
+					#top{overflow:hidden; margin:40px 0 100px;}
+						#top article:nth-of-type(1){margin-left:90px;}
+						#top article:nth-of-type(2){margin:0 40px 0; }
+						#top article:nth-of-type(3){margin-right:100px;}
+							.fill article img{width:300px; height:300px; position:absolute; top:100px; left:0; transition:all 0.5s;}
+					#bottom{overflow:hidden; margin-bottom:85px;}
+						#bottom article:nth-of-type(1){margin-left:90px;}
+						#bottom article:nth-of-type(2){margin:0 40px 0; }
+						#bottom article:nth-of-type(3){margin-right:100px;}
+						
+					.fill article p{color:#fff; font-size:20px; font-weight:bold;}
+						.fill article .top{margin-top:20px;}
+							.fill article .toptop{margin-top:30px;}
+							
+						.fill article .bottom{margin-top:250px;}
+						.fill article .bottom1{margin-top:270px;}
+				
+					.fill article img:hover{top:0;}
+					
+				.choice{clear:both; height:290px; background:url(images/choice.jpg); margin-bottom:100px;}
+					.choice h2{color:#fff; font-size:30px; padding:60px 0 0 50px;}
+					.choice p{ display:inline;}
+						.choice p a{background:#bbbbbb; display:inline-block; color:#000;margin:50px 40px 0 0; width:240px; height:30px; border-radius:20px; text-align:center; letter-spacing:3px; position:relative; line-height:35px;}
+						.choice p:nth-child(2) a{margin-left:50px;}	
+							.choice span{position:absolute; top:0; left:0; width:240px; transition:all 0.5s;}
+						
+				
+					.choice p:hover a{background:#c5ac76;}
+					.choice p:hover span{top:-5px; color:#fff;}
+					
+					.recom1{width:350px; height:390px; float:left; margin:0 40px 120px 20px; border-top:2px solid #fff;}
+						.recom1 p:nth-child(1){font-size:20px; color:#fff; text-align:center; padding:30px 0 40px;}
+						.recom1 img{width:350px; height:300px; }
+						
+					
+						
+					.recom2{width:750px; height:350px; overflow:hidden; text-align:center; border-top:2px solid #fff;}
+						.recom2 p{color:#fff; font-size:40px; font-family: 'Gamja Flower', cursive; padding:40px 0 30px;}
+						.recom2 li{float:left;}
+						.recom2 li img{width:250px; height:250px; transform:scale(1); transition:all 0.5s; transform-origin:center center; position:relative;}
+						
+						.recom2 li a:hover img{transform:scale(1.1); z-index:999;}
+						
+						
+						
+				.information{clear:both; margin-bottom:110px; position:relative;}					
+					.infor{color:#fff; font-size:40px; font-family: 'Do Hyeon', sans-serif; margin-left:50px; margin-bottom:40px; letter-spacing:2px;}
+					.info a:hover{color:#bbb;}
+					
+					.information article{width:800px; height:400px; margin:40px 0 0 200px; position:relative; overflow:hidden;}
+						.information img{width:800px; height:400px; position:absolute; transition:all 0.5s;}
+						.information img:nth-of-type(1){left:0; top:0;}
+						.information img:nth-of-type(2){left:800px; top:0;}
+						
+					.information a:hover+article img:nth-of-type(1){left:-800px;}
+					.information a:hover+article img:nth-of-type(2){left:0;}
+										
+		/* footer */
+		footer{background:#c5ab76; height:260px; position:relative;}
+			footer ul{}
+				footer ul li{display:inline-block; color:#000; font-size:20px; margin:30px 0 60px 40px;}
+			
+			address{color:#d9d6c0; margin-left:40px;}
+			.fin{position:absolute; right:80px; bottom:0;}
+		
+		</style>
+	</head>
+	<body>
+		<div id='wrapper'>
+			<header>
+				<!--sns 버튼모음-->
+				<div class='header'>
+					<ul class='sns'>
+						<li><a href='#'><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href='#'><i class="fas fa-camera-retro"></i></a></li>
+						<li><a href='#'><i class="fas fa-bold"></i></i></a></li>
+					</ul>
+					<ul class='right'>
+						<li><a href='#'>로그인</a></li>
+						<li><a href='#'>회원가입</a></li>
+						<li><a href='#'>주문내역</a></li>
+					</ul>
+				</div>
+				<div class='logo'><img src='images/logo1.jpg' alt='logo 이미지'></div>
+				<ul class='gnb'>
+					<li><a href='#'>원두커피</a></li>
+					<li><a href='#'>커피용품</a></li>
+					<li><a href='#'>매장안내</a></li>
+					<li><a href='#'>회원혜택</a></li>
+					<li><a href='#'>이벤트</a></li>
+				</ul>
+			</header><!--header 끝-->
+			<section>
+				<h1></h1>
+				<div class='left'>
+					<h2>FILL HOUSE COFFEE</h2>
+					<p>"Good to the </p>
+					<p>Last Drop"</p>
+					<p>-Franklin Roosevelt<p>
+				</div>
+				
+				<div class='divright'></div>
+				<div class='divright2'></div>
+				
+				<div class='about'>
+					<p>About</p>
+					<article>
+						<p>FILL커피는 지속적으로 고객의 목소리를 모니터링합니다.<br>
+						고객 여러분의 의견에 귀를 기울이며 더욱 훌륭한 맛과<br>
+						향의 커피를 만들기 위해 노력하고 있습니다.<br>
+						또한 소량 주문도 주문 즉시 로스팅을 시작하여 고객 여러분께 보내드리고 있습니다.<br>
+						최대한 많은 분들이 FILL커피를 맛보시기 바라는 마음에서입니다.<br>
+						다채로운 고객 여러분의 입맛을 만족시켜 드리기 위해<br>
+						각기 다른 로스팅 포인트를 잡아낸 여러 제품을 판매하고 있습니다.</p>
+					</article>	
+					<div class='aboutimg'></div>
+				</div>
+				
+				
+				<div class='coffee'>
+					<img src='images/roasting1.jpg' alt='roasting'>
+					<p class='roasting'>ROASTING PROCESS</p>
+					<ul class='Order'>
+						<li><a href='#'>Order</a></li>
+						<li><a href='#'><img src='images/roastingIcon1.png' alt='' onmouseover="this.src='images/roastingIcon1over.png'" onmouseout="this.src='images/roastingIcon1.png'"></a></li>	
+					</ul>
+					<ul class='Roast'>
+						<li><a href='#'>Roast</a></li>
+						<li><a href='#'><img src='images/roastingIcon2.png' alt='' onmouseover="this.src='images/roastingIcon2over.png'" onmouseout="this.src='images/roastingIcon2.png'"></a></li>
+						
+					</ul>
+					<ul class='Get'>
+						<li><a href='#'>Get</a></li>
+						<li><a href='#'><img src='images/roastingIcon3.png' alt='' onmouseover="this.src='images/roastingIcon3over.png'" onmouseout="this.src='images/roastingIcon3.png'"></a></li>
+					</ul>
+					
+					<p class='truck'><a href='#'><img src='images/roastingIcon4.png' alt='트럭 이미지' onmouseover="this.src='images/roastingIcon4over.png'" onmouseout="this.src='images/roastingIcon4.png'"></a></p>
+				</div>
+				
+				<div class='Product'>
+					<h3>Product Categories</h3>
+					<p></p>
+					<div class='cate'>
+						<article class='cate1'>
+							<img src='images/cate1.jpg'>
+							<p><span class='Accessory'>Accessory</span></p>
+						</article>
+						<article class='cate2'>
+							<a href='#'><img src='images/cate2.jpg'></a>
+							<p><span class='Blending'>Blending</span></p>
+						</article>
+						<article class='cate3'>
+							<a href='#'><img src='images/cate3.jpg'></a>
+							<p><span class='Origins'>Origins</span></p>
+						</article>
+					</div>
+				</div>
+				
+				<div class='fill'>
+					<p>FILL COFFEE TOP6</p>
+					<a href="#"><img src="images/more.png"></a>
+					<article id='top'>
+						<article>
+							<p class="top toptop">케냐 아이히더 AA Plus</p>
+							<img src="images/bean1.jpg">
+							<p class="bottom bottom1">라임의 깔끔한 산미와 입안에서 느껴지는 부드러운 촉감</p>
+						</article>
+						<article>
+							<p class="top">에티오피아 아리차 예가체프 G1 내추럴</p>
+							<img src="images/bean2.jpg">
+							<p class="bottom">싱그러운 장미의 신맛 끝에<br>오는 달콤한 후미</p>
+						</article>
+						<article>
+							<p class="top">에티오피아 코체레 내추럴<br>예가체프 G1s</p>
+							<img src="images/bean3.jpg">
+							<p class="bottom">풍성한 후르츠 아로마에 오래 지속되는 후미</p>
+						</article>
+					</article>
+					<article id='bottom'>
+						<article>
+							<p class="top">에티오피아 콩가 예가체프 G1 스페셜티</p>
+							<img src="images/bean4.jpg">
+							<p class="bottom">라매우 달콤한 베리류의 산미,풍성하고 부드러운 바디감</p>
+						</article>
+						<article>
+							<p class="top">콜롬비아 산타로사 수프리모 스페셜티</p>
+							<img src="images/bean5.jpg">
+							<p class="bottom">꽃향기, 부드럽고 은은한 산미와 고소한 견과루의 만남</p>
+						</article>
+						<article>
+							<p class="top">과테말라 산타 모니카 SHB<br>스페셜티</p>
+							<img src="images/bean6.jpg">
+							<p class="bottom">깊고 선명한 달콤함과 기분<br>좋은 스모키함의 만남</p>
+						</article>
+					</article>
+				</div>
+				
+				<div class='choice'>
+					<h2 class='choiceh2'>COFFEE CHOICE >></h2>
+					<p><a href='#'><span>달콤쌉싸름</span></a></p>
+					<p><a href='#'><span>고소함,구수함</span></a></p>
+					<p><a href='#'><span>묵직,달콤한 여운</span></a></p>
+					<p><a href='#'><span>은은하고 편안한</span></a></p>
+				</div>
+				
+				<div class='recomand'>
+					<div class='recom1'>
+						<p>이달의 추천커피>></p>
+						<p><img src='images/month.jpg' alt="이달의 추천 커피"
+							onmouseover="this.src='images/monthBack.jpg'"
+							onmouseout="this.src='images/month.jpg'"></p>
+					</div>
+					<div class='recom2'>
+						<p>#_FILLHOUSE</p>
+						<ul>
+							<li><a href='#'><img src='images/insta1.jpg' alt=''></a></li>
+							<li><a href='#'><img src='images/insta2.jpg' alt=''></a></li>
+							<li><a href='#'><img src='images/insta3.jpg' alt=''></a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class='information'>
+					<a href='#'><h2 class='infor'>매장안내 ></h2></a>
+					<article>
+						<img src='images/store.jpg'>
+						<img src='images/map.jpg'>
+					</article>
+				</div>
+			</section><!--section 끝-->
+			<footer>
+				<ul>
+					<li>ABOUT FILL</li>
+					<li>이용약관</li>
+					<li>개인정보취급방침</li>
+					<li>이용안내</li>
+					<li>사업자구매안내</li>
+				</ul>	
+					<address>상호 : 필 하우스 커피(FILL HOUSE COFFEE) 주소 : 경기 수원시 팔달구 덕영대로 899 세진브론즈빌<br>
+						지번 : 경기 수원시 덕영대로 899 우편번호 : 012345<br>
+						전화번호 : 010-6615-6759 이메일 :fillhouse@fillhouse.com 사업자등록번호 : 456-78-901234<br>
+						통신판매업신고 : 제 2020-경기수원-0001 호<br>
+						계좌번호 : 우리 010-6615-6759 대표자 : 문진실 개인정보책임자 : 문진실</address>
+					<div class='fin'>
+						<img src='images/logo1.ico' alt='로고 이미지'>
+					</div>
+			</footer><!--footer 끝-->
+		</div>
+	</body>
+</html>
