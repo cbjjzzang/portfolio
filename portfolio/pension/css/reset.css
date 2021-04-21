@@ -1,0 +1,291 @@
+﻿@charset-utf8;
+*{margin:0; padding:0;}
+img{border:0;}
+img, fieldset{vertical-align:middle; border:0;}
+li{list-style-type:none;}
+address, em{font-style:normal;}
+a{text-decoration:none; color:#fff;}
+body{font:bold 12pt 'a드림고딕1'; box-sizing:border-box; background:#aaa;/**/}
+
+#wrapper{width:1200px; margin:0 auto; position:relative; background-color:#fff; overflow:hidden;/**/}
+	
+/*popUp*/
+#popUp{width:402px; height:556px; background:url(../images/popUp_bg.png); box-shadow:3px 3px 3px #000; text-align:center; position:absolute; top:500px; left:50%; margin-top:-278px; margin-left:-201px; z-index:9999; border:2px solid #000; /*display:none;*/}
+	#popUp .winter img{margin-top:100px;}
+		#popUp p{color:#fff; font:bold 24pt '휴먼둥근헤드라인'; }
+		#popUp .discount{color:#fabd02; font-size:25pt; text-shadow:2px 2px 2px #999;}
+		#popUp .holly{font-size:15pt; margin-top:10px;}
+		#popUp .black{width:250px; margin:0 auto; background:rgba(0,0,0,0.5); font-size:10pt; font-family:'a드림고딕1'; margin-top:10px;}
+		#popUp .close{background:#d0d5d6; width:402px; height:35px; text-align:center; line-height:35px; position:absolute; bottom:0; left:0;}
+			#popUp .close p{font:bold 10pt 'a드림고딕1'; display:inline-block; color:#000; margin-right:30px; cursor:pointer;}
+			#popUp .close img{margin-right:80px;}
+
+/*menu*/
+#menu{width:1200px; height:800px; background:url(../images/menu_bg.png); position:fixed; top:100px; z-index:999; display:none;/**/}
+	#menu .menuClose{position:absolute; right:40px; top:20px; font-size:20pt; cursor:pointer; color:#fff; border:1px solid #fff;}
+	#menu .menuClose:hover{color:#f7e243; border-color:#f7e243; }
+		
+	#gnb{margin-top:150px;}
+		#gnb a{font:12pt 'a시월구일굴림1';}
+		#gnb .main{float:left; width:200px; height:30px; text-align:center; line-height:30px; border-bottom:2px solid #fff;}
+			#gnb .main>a{font-size:14pt; width:200px; height:30px; display:block; line-height:30px;}
+			#gnb .main:hover>a{color:#f7e243; background:#055c5f; border:1px solid #999;}
+			#gnb .main:hover .sub{}
+				#gnb .sub{ display:none;}
+				#gnb .sub li a{width:200px; height:30px; display:block; padding-top:10px;}
+				#gnb .sub li:hover a{color:#f7e243; background:#055c5f; border:1px solid #999;}
+				
+/*position*/
+#position{position:fixed; top:0; left:80%; z-index:9999}
+	#position>img{border:1px solid #00bbbb;}
+	#position ul li img{position:absolute; right:-6px; border:1px solid #06ecf4; border-radius:100%;}
+		#position ul li:nth-of-type(1) img{top:32%;}
+		#position ul li:nth-of-type(2) img{top:34%;}
+		#position ul li:nth-of-type(3) img{top:36%;}
+		#position ul li:nth-of-type(4) img{top:38%;}
+		#position ul li:nth-of-type(5) img{top:40%;}
+		
+/*slide*/
+#p1bg{height:100px; background-color:#000; position:relative; z-index:0; text-indent:-9999px;}
+#header{width:1200px; height:800px; }
+	#header .slide{}
+		#header .slide img{position:absolute; top:100px; left:0; z-index:1;}
+
+/*page1 Top*/		
+	#header .p1Top{position:relative; z-index:2;}
+		#header .p1Top ul li, h1{position:absolute;}
+			#header .p1Menu{top:30px; left:20px;}
+			#header .p1Search{top:30px; left:70px;}
+			#header h1{top:30px; left:50%; margin-left:-218px; cursor:pointer;}
+			#header .p1Tell{top:30px; right:140px;}
+				#header .p1Tell a{font:10pt 'a드림고딕1';}
+				#header .p1Tell a:hover{color:#f7e243;}
+			#header .p1Lang{top:25px; right:40px; border:1px solid #fff; padding:5px 10px; }			
+				#header .p1Lang a{font:10pt 'a드림고딕1';}
+				#header .p1Lang img{margin-left:5px; }
+				
+			#header .p1Top .on{border:none; opacity:0;}
+			#header .p1Top .on:hover{opacity:1;}
+			
+/*page1 text*/
+	#header .mainText{position:relative; z-index:2;}
+		#header .mainText h2{position:absolute; top:350px; font-size:72pt; color:#fff; 
+		text-shadow: 0 0 20px #fff,
+         10px -10px 30px #085e19,
+         -20px -20px 40px #6c766e,
+         20px -40px 50px #3d493f,
+         -20px -60px 60px #1c2a1f,
+         0 -80px 70px #1d211e,
+         10px -90px 80px #000;
+		z-index:9999; letter-spacing:10px;}
+		#header .mainText h2.Mordern{left:50%; margin-left:-232px; 
+		text-shadow: 0 0 20px #ffff,
+         10px -10px 30px #feec85,
+         -20px -20px 40px #06ecf4,
+         20px -40px 50px #00bbbb,
+         -20px -60px 60px #055c5f,
+         0 -80px 70px #2e4639,
+         10px -90px 80px blue;  display:none;}
+		#header .mainText h2.TakeArest{left:50%; margin-left:-338px; 
+		text-shadow: 0 0 20px #fff,
+         10px -10px 30px #9bd3e9,
+         -20px -20px 40px #77c5e4,
+         20px -40px 50px #5288dc,
+         -20px -60px 60px #1968e3,
+         0 -80px 70px #1926e3,
+         10px -90px 80px #1d097b; display:none;}
+		#header .mainText h2.Infinity{left:50%; margin-left:-216px; 
+		text-shadow: 0 0 20px #fefcc9,
+         10px -10px 30px #feec85,
+         -20px -20px 40px #ffae34,
+         20px -40px 50px #ec760c,
+         -20px -60px 60px #cd4606,
+         0 -80px 70px #973716,
+         10px -90px 80px #451b0e; display:none; }
+		#header .mainText h2.Beautiful{left:50%; margin-left:-268px; }
+		
+	#header .nextImg{position:relative; z-index:2;}	
+		#header .nextImg li{position:absolute; top:630px;}
+			#header .nextImg li:nth-of-type(1),.nextImg li:nth-of-type(2){left:50%; margin-left:-55px;}
+			#header .nextImg li:nth-of-type(3){left:50%; margin-left:-1.2px; margin-top:-3px;}
+			#header .nextImg li:nth-of-type(4),.nextImg li:nth-of-type(5){left:50%; margin-left:20px;}
+				#header .nextImg .on{opacity:0;}
+				#header .nextImg .on:hover {opacity:1;}
+				
+/*page1 bottom*/
+	#header .p1Bottom a{position:absolute; z-index:10;}
+		#header .p1Bottom>a{top:840px; left:10px;}
+		
+		#header .p1Bottom .on{opacity:0;}
+		#header .p1Bottom .on:hover{opacity:1;}
+		
+		#header .p1Bottom ul li a{top:840px; left:50%;}
+		#header .p1Bottom ul li:nth-of-type(1) a{margin-left:-30px; margin-top:-30px;}
+		#header .p1Bottom ul li:nth-of-type(1) a:hover{color:#f7e243;}
+		#header .p1Bottom ul li:nth-of-type(2) a,.p1Bottom ul li:nth-of-type(3) a {margin-left:-7px;}
+		#header .p1Bottom ul li:nth-of-type(3) a{opacity:0;}
+		#header .p1Bottom ul li:nth-of-type(3) a:hover{opacity:1;}
+		
+/*reservation*/
+	.reservation{width:1200px; height:200px; position:relative; background:#000; padding-top:60px; box-sizing:border-box; z-index:2;}
+		.reservation .check{float:left; width:360px; height:70px; outline:1px solid #f7e243; margin-left:200px;}
+			.reservation .call{float:left; width:180px; height:70px;}
+				.reservation .call p{font:bold 18pt gabriola; font-style:italic; color:#fff; padding-left:5px;}
+				.reservation .call span{font:16pt 'a드림고딕4'; font-style:italic; color:#f7e243; padding-left:5px;}
+				.reservation .check a{position:absolute; top:105px; left:540px;}
+				.reservation .check .calen{position:absolute; top:130px; left:185px; display:none;}
+				
+		.reservation .guest{float:left; width:150px; height:70px; outline:1px solid #f7e243; margin-left:70px;}
+			.reservation .guest p{font:bold 18pt gabriola; font-style:italic; color:#fff; padding-left:5px;}
+			.reservation .guest span{font:16pt 'a드림고딕4'; font-style:italic; color:#f7e243; padding-left:5px;}
+			.reservation .guest a{position:absolute; top:105px; left:760px;}
+			.reservation .guest .calen2{position:absolute; top:130px; left:615px; display:none;}
+			
+		.reservation .make{float:left; width:150px; height:70px; border:1px solid #fff; margin-left:70px; text-align:center;}
+			.reservation .make p{padding-top:10px; font:bold 16pt 'a드림고딕4'; font-style:italic; color:#fff; cursor:pointer;}
+			
+			.reservation .on{opacity:0;}
+			.reservation .on:hover{opacity:1;}
+			.reservation .make:hover{border-color:#f7e243;}
+			.reservation .make:hover p{color:#f7e243;}
+			
+/* container */
+#container{margin-top:200px; }
+
+/*page2*/
+	#container #page2{width:1200px; height:1700px; position:relative; border-top:2px solid #000;}
+		#container .p2head{height:120px; position:relative; }
+			#container .p2head h1{position:absolute; top:20px; left:20px; cursor:pointer;}
+			#container .p2head ul{float:right;}
+				#container .p2head ul li{float:left; }
+				#container .p2head ul li:nth-of-type(1){width:178px; height:70px; margin-top:17px; margin-right:150px; background:#055c5f; text-align:center; line-height:85px;}
+				#container .p2head ul li:nth-of-type(1) img{margin-right:15px;}
+				#container .p2head ul li:nth-of-type(1) a{font:bold 27pt 'a아시아헤드4'; color:#fff;}
+				#container .p2head ul li:nth-of-type(1) a:hover{color:#f7e243;}
+				
+				#container .p2head ul .on{position:absolute; top:45px; right:279.5px; opacity:0;}
+				#container .p2head ul .on:hover{opacity:1;}
+				
+				#container .p2head ul .p2search{position:absolute; top:40px; right:100px;}
+				#container .p2head ul .p2sns{position:absolute; top:25px; right:40px;}
+				#container .p2head ul .on1{opacity:0;}
+				#container .p2head ul .on1:hover{opacity:1;}
+
+/*p2main*/
+	#container .p2main{width:1200px; height:686px; background:url(../images/p2_bg1.png); position:relative; margin-bottom:100px;}
+		#container .p2bg{width:1000px; height:588px; background:url(../images/p2_bg2.png); position:absolute; top:50%; left:50%; margin-left:-500px; margin-top:-299px;}
+			#container .p2bg .small{position:absolute; top:400px; left:120px; font:bold 13pt 'a드림고딕1'; color:#fff;}
+			#container .p2bg .large{position:absolute; top:430px; left:120px; font:bold 20pt 'a드림고딕1'; color:#fff; text-shadow:4px 4px 1px #000;}
+			#container .p2bg img{position:absolute; top:470px; left:120px;}
+			
+/*p2footer*/
+	#container .p2footer{width:1200px; height:800px; box-sizing:border-box; position:relative;}
+		#container .p2footer li{width:600px; height:400px;  float:left; text-align:center; background:#000; transition:all 0.5s;}
+			#container .p2footer p{font:bold 50pt/1.2 'gabriola';font-style:italic; color:#000; padding-top:40px; transition:all 1s;}
+			#container .p2footer span{font:bold 28pt 'a드림고딕1'; color:#000; transition:all 1.5s;}
+			#container .p2footer img{width:600px; height:400px; opacity:0.5; position:relative; transition:all 1s;}
+			
+			#container .p2footer li:hover{background:rgba(0,0,0,0.5);}
+			#container .p2footer li:hover p{color:#f7e344;}
+			#container .p2footer li:hover span{color:#fff;}
+			#container .p2footer li:hover img{transform:scale(1.2); opacity:1;}
+			
+			#container .p2footer .read{position:absolute; bottom:0; right:0; display:block; width:120px; height:40px; background:#000; color:#000; text-align:center; line-height:40px; font-size:12pt; font-family:'굴림';}
+			#container .p2footer .read:hover{text-decoration:underline; color:#fff; background:#f7e344; }
+
+/*page3*/
+	#container #page3{width:1200px; height:1700px; position:relative; margin-top:100px; border-top:2px solid #000;}
+		#container .p3head{height:120px; position:relative; }
+			#container .p3head h1{position:absolute; top:20px; left:20px; cursor:pointer;}
+			#container .p3head ul{float:right;}
+				#container .p3head ul li{float:left; }
+				#container .p3head ul li:nth-of-type(1){width:178px; height:70px; margin-top:17px; margin-right:150px; background:#055c5f; text-align:center; line-height:85px;}
+				#container .p3head ul li:nth-of-type(1) img{margin-right:15px;}
+				#container .p3head ul li:nth-of-type(1) a{font:bold 27pt 'a아시아헤드4'; color:#fff;}
+				#container .p3head ul li:nth-of-type(1) a:hover{color:#f7e243;}
+				
+				#container .p3head ul .on{position:absolute; top:45px; right:279.5px; opacity:0;}
+				#container .p3head ul .on:hover{opacity:1;}
+				
+				#container .p3head ul .p3search{position:absolute; top:40px; right:100px;}
+				#container .p3head ul .p3sns{position:absolute; top:25px; right:40px;}
+				#container .p3head ul .on1{opacity:0;}
+				#container .p3head ul .on1:hover{opacity:1;}
+				
+/*p3main*/
+	#container .p3main{width:1200px; height:703px; background:url(../images/p3_bg1.png); position:relative; margin-bottom:100px;}
+		#container .p3bg{width:1114px; height:666px; background:url(../images/p3_bg2.png); position:absolute; top:50%; left:50%; margin-left:-557px; margin-top:-333px;}
+			#container .p3bg .small{position:absolute; top:170px; left:520px; font:bold 13pt 'a드림고딕1'; color:#fff;}
+			#container .p3bg .large{position:absolute; top:200px; left:520px; font:bold 20pt 'a드림고딕1'; color:#fff; text-shadow:4px 4px 1px #000;}
+			#container .p3bg img{position:absolute; top:240px; left:520px;}
+			
+/*p3footer*/
+	#container .p3footer{width:1200px; height:610px; position:relative;}
+		#container .p3footer{text-align:center;}
+			#container .p3footer p:nth-of-type(1){font:bold 25pt arial; color:#000; padding-top:50px;}
+			#container .p3footer ul li>img{width:710px; position:absolute; top:50%; margin-left:-355px; margin-top:-186px;}
+			#container .p3footer ul li:nth-of-type(1) img{left:-20%;}
+			#container .p3footer ul li:nth-of-type(2) img{left:50%;}
+			#container .p3footer ul li:nth-of-type(3) img{left:120%;}
+			#container .p3footer .left{position:absolute; top:300px; left:245px;}
+			#container .p3footer .right{position:absolute; top:300px; right:245px;}
+			#container .p3footer .on{opacity:0;}
+			#container .p3footer .on:hover{opacity:1;}
+			
+			#container .p3footer .p3text{position:absolute; top:82%; left:50%; margin-left:-300px; font:14pt/1.6 arial; font-style:italic;}
+
+/*page4*/		
+	#container #page4{width:1200px; height:1700px; position:relative; margin-top:100px; border-top:2px solid #000;}
+		#container .p4head{height:120px; position:relative; }
+			#container .p4head h1{position:absolute; top:20px; left:20px; cursor:pointer;}
+			#container .p4head ul{float:right;}
+				#container .p4head ul li{float:left; }
+				#container .p4head ul li:nth-of-type(1){width:178px; height:70px; margin-top:17px; margin-right:150px; background:#055c5f; text-align:center; line-height:85px;}
+				#container .p4head ul li:nth-of-type(1) img{margin-right:15px;}
+				#container .p4head ul li:nth-of-type(1) a{font:bold 27pt 'a아시아헤드4'; color:#fff;}
+				#container .p4head ul li:nth-of-type(1) a:hover{color:#f7e243;}
+				
+				#container .p4head ul .on{position:absolute; top:45px; right:279.5px; opacity:0;}
+				#container .p4head ul .on:hover{opacity:1;}
+				
+				#container .p4head ul .p4search{position:absolute; top:40px; right:100px;}
+				#container .p4head ul .p4sns{position:absolute; top:25px; right:40px;}
+				#container .p4head ul .on1{opacity:0;}
+				#container .p4head ul .on1:hover{opacity:1;}
+				
+/*p4main*/
+	#container .p4main{width:1200px; height:693px; background:url(../images/p4_bg1.png); position:relative; margin-bottom:100px;}
+		#container .p4bg{width:1154px; height:681px; background:url(../images/p4_bg2.png); position:absolute; top:50%; left:50%; margin-left:-577px; margin-top:-340px;}
+			#container .p4bg .small{position:absolute; top:220px; left:150px; font:bold 13pt 'a드림고딕1'; color:#fff;}
+			#container .p4bg .large{position:absolute; top:250px; left:150px; font:bold 20pt 'a드림고딕1'; color:#fff; text-shadow:4px 4px 1px #000;}
+			#container .p4bg img{position:absolute; top:290px; left:150px;}
+			
+/*p4footer*/
+	#container .p4footer{text-align:center;}
+		#container .p4footer h3{font-family:'monotype corsiva'; font-size:45pt; letter-spacing:0.7em;}
+		#container .p4footer img{cursor:pointer;}
+		
+/*footer*/
+	#footer{width:1200px; height:490px; text-align:center; background:#055c5f; box-sizing:border-box; position:relative; clear:both;}
+		#footer h1{width:1200px; height:88px; margin-top:60px; text-align:center;}
+			#footer p:nth-of-type(1){width:600px; height:77px; position:absolute; top:180px; left:300px; border:2px solid #fff; font:bold 15pt 'a시월구일굴림1'; color:#fff; line-height:77px; cursor:pointer;}
+			#footer p:nth-of-type(1):hover{border-color:#333; color:#333;}
+				#footer p:nth-of-type(1) span{font-size:30pt; }
+				#footer address{padding-top:280px; font:10pt/2 'a시월구일굴림1'; color:#fff; }
+				#footer .footerSns{margin-top:20px; cursor:pointer;}
+				#footer .footerSns .on{position:absolute;}
+				#footer .footerSns .sns01{left:524px;}
+				#footer .footerSns .sns02{left:578px;}
+				#footer .footerSns .sns03{left:630px;}
+				
+				#footer .footerSns .on{opacity:0;}
+				#footer .footerSns .on:hover{opacity:1;}
+				
+				#footer .top{position:absolute; bottom:10px; right:40px; cursor:pointer;}
+					#footer .top img{position:absolute; top:0; left:10px; }
+					#footer .top a{color:#fff;}
+					#footer .top a:hover{color:#f7e243;}
+					#footer .top .on{opacity:0;}
+					#footer .top .on:hover{opacity:1;}
+
+		
